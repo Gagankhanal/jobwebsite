@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>online dual recruetment system</title>
+</head>
+<body>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <div class="container text-uppercase p-2 ">
+            <a class="navbar-brand font-weight-bold text-dark text-uppercase" href="#"><img src="image/logo2.jpg" alt="logo" style="height: 50px;">dual Job recruetment</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#info">About us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="post.html">Post</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">CV</a>
+                </li> -->
+              </ul>
+                
+            </div>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModel">
+                  Login
+                </button>
+    
+    <!-- Modal -->
+                 <div class="modal" id="myModel" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+
+                        <ul class="nav nav-tabs" role="tablist" id="CustomLoginBlock">
+                          <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" data-loginurl="/jobseeker/login/" href="#jobseeker" role="tab">Jobseeker</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" data-loginurl="/employer/login/" href="#employer" role="tab">Employer</a>
+                          </li>
+                          </ul>
+                          
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+
+
+                       <div class="modal-body " id="mContent">
+                        <p class="text-primary">Login with your registered Email & Password.</p>
+
+                        <form id="employer" action="/employer/login/">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control"  placeholder="Email-address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1"></label>
+                            <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1">
+                          </div>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+                          </div>
+                          <button type="submit" class="btn btn-block btn-primary text-white col-12 ">
+                            <i class="fa fa-sign-in " aria-hidden="true"  ></i> Login
+                            </button>
+                        </form>
+                       </div>
+                      
+                     </div>
+                   </div>
+                 </div>
+          </div>
+          </nav>
+        </div>
+      
+       
+        <section class="header-section bg-primary py-4">
+          <div class="container">
+            <div class="row">
+           <div class=" center-div col-lg-4 col-md-4 offset-lg-1 offset-md-1 col-md-5  offset-md-1   " >
+            <div class=" col-md-12 ">
+              <h1 class=" h1-primary font-weight-bold text-white ">Find Your Future
+                Right Now!</h1>
+              <p class="p-primary">600,000+ aspiring jobseekers waiting to work in an
+                    organisation like yours. 32,000 + satisfied clients
+                   have been recruiting through merojob since 2009.</p>
+              <a class="btn btn-lg btn-warning" href="post.html"><strong>Post a job</strong></a>
+           </div>
+          </div>
+            
+            <div class="employ-login col-lg-4 offset-lg-1 col-md-5 mx-auto my-auto">
+               <div class="container">
+               <div class="row">
+               <div class="col-lg-10 col-md-10 col-10 offset-lg-1 offset-md-1 offset-1">
+              <h5 class="font-weight-bold text-white"> login</h3>
+              <p class="p-primary">Login with your registered Email & Password.</p>
+
+              <form id="employ-login" action="/employer/login/">
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="email" class="form-control"  placeholder="Email-address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                  <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary text-white col-12 ">
+                  <i class="fa fa-sign-in " aria-hidden="true"  ></i> Login
+                  </button>
+              </form>
+             </div>
+            </div>
+           </div>
+          </div>
+        </div>
+       </div>
+          </section>
+       
+       
+      <!-- end of header section -->
+
+        <!-- about us starts-->
+      <section class="about_info pt-5 pb-4 " id="info">
+          <div class="container">
+            <div class="row mt-3 mb-5">
+                <div class="col-md-12 text-center">
+                  <h3 class="my-4">Introduction</h3>
+                  <hr class="thick-border ">
+               </div>
+               <div class="col-md-12 text-center">
+                  <p class="text-muted">
+                    An online recruiting system helps with contact management, as well as increases productivity for recruiters. Mostly used in staffing agencies, online recruiting software is different from an applicant tracking system. Online recruiting system software helps recruiters search for job applicants when needed, as well as offers placement and interview tracking. Even more, online recruiting software offers automated management of daily tasks for recruiting firms and staffing agencies.
+                  </p>
+
+                  <p class="text-muted">
+                    Online recruitment systems offers increased productivity and cost savings, as the software itself offers an automated recruiting process that reduces the need for manual processes and paperwork.
+                  </p>
+               </div>
+          </div>
+      </section>
+
+      <!-- about us end -->
+
+      <!-- extra div start -->
+      
+        <section class=" header-extradiv">
+         <div class="container ">
+          <div class="row ">
+              <div class="col-md-12 text-center">
+                <h3 class="my-4">Our works</h3>
+                <hr class="thick-border  ">
+             </div>
+            <div class="extradiv col-lg-4 col-md-4 col-12"><a href="#"><i class="fa fa-4x        fa-desktop " aria-hidden="true"></i></a>
+                 <h3 class="my-4">High coverage</h3>
+                 <p class="text-muted">Reach among the widest range of jobseekers, receive the targeted applications instantly and sort the best probables.</p>
+               </div>
+
+               <div class="extradiv col-lg-4 col-md-4 col-12"><a href="#"><i class="fa fa-4x fa-handshake-o" aria-hidden="true"></i></a>
+                <h3 class="my-4">Hire Employ</h3>
+                <p class="text-muted">The best you found through merojob will take your organization to newer heights.</p>
+              </div>
+
+              <div class="extradiv col-lg-4 col-md-4 col-12"><a href="#"><i class="fa fa-4x fa-check-circle" aria-hidden="true"></i></a>
+                <h3 class="my-4">Post job and CV</h3>
+                <p class="text-muted">Make a wish and we will help to publish the job or choose our recruitment packages.</p>
+              </div>
+            </div>
+         </div>
+      </section>
+      <!-- extra div section end -->
+
+      <!-- our services section strat -->
+       <section id="services" class="mt-5 mb-4 bg-light">
+          <div class="container">
+            <h4 class="text-center">Our Services</h4>
+            <hr class="thick-border">
+          </div>
+          
+          <div class="container">
+             <div class="row">
+               <div class="col-lg-6 col-sm-10 offset-1 offset-lg-0">
+                   <div class="names my-3">
+                     <h1>html</h1>
+                     <div class="progress w-75">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 100%" >100%</div>
+                    </div>
+                   </div>
+               
+                <div class="names my-3">
+                  <h1>css</h1>
+                  <div class="progress w-75">
+                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%"  >90%</div>
+                 </div>
+                </div>
+          
+              <div class="names my-3">
+                <h1>javascript</h1>
+                <div class="progress w-75">
+                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 80%"  aria-valuemax="80%">80%</div>
+               </div>
+              </div>
+                 
+                 <div class="names my-3">
+                   <h1>reactJs</h1>
+                   <div class="progress w-75">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"   role="progressbar" style="width: 70%" >70%</div>
+                  </div>
+                 </div>
+      
+                <div class="names my-3">
+                   <h1>nodeJs</h1>
+                   <div class="progress w-75">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"  role="progressbar" style="width: 100%" >100%</div>
+                  </div>
+                </div> 
+              </div>
+
+         
+                  <div class="col-lg-6 col-md-12 col-10 py-3 offset-1 offset-lg-0 mediaservice">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-2 col-md-2 col-2 text-center serviceicons">
+                            <i class="fa fa-3x fa-money " aria-hidden="true"></i>
+                           </div>                     
+                           <div class="col-lg-10 col-md-12 col-12 servicediv">
+                            <h6 class="my-2 font-weight-bold text-center">Pay & Start Receiving Applications</h3>
+                            <p class="text-muted p-primary ">This is a prepaid service. Pay and make your vacancy online in TOP Job section. Get applications, login your merojob.com employer account to find applicants’ profile and other details.</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-2 text-center serviceicons">
+                              <i class="fa fa-3x fa-registered  aria-hidden="true"></i>
+                             </div>                        
+                             <div class="col-lg-10 col-md-12 col-12 servicediv">
+                              <h6 class="my-2 font-weight-bold text-center">Register and Send Job Details</h6>
+                              <p class="text-muted p-primary ">
+                                
+                                  Create your corporate account to send or post the following details for job <br>
+                                     
+                                       -Job Description and Job Specifications <br>
+                                       -Logo of your organization and promotional pictures <br>
+                                        -Organization description <br>
+                                                                     
+                                 </p>
+                              </div>
+
+                              <div class="col-lg-2 col-md-2 col-2 text-center serviceicons">
+                                <i class="fa fa-3x  fa-newspaper-o"  aria-hidden="true"></i>
+                               </div>                          
+                               <div class="col-lg-10 col-md-12 col-12 servicediv">
+                                <h6 class="my-2 font-weight-bold text-center">Online Advertisement</h3>
+                                <p class="text-muted p-primary ">Online duel recurement started its commercial operation from 2009, has been successfully providing a professional services to the employers and the jobseekers in Nepal, merojob, within a short span of time, has reached the high peak of popularity through the word of mouth advertisement which resulted in merojob becoming most preferred and #1 job Site in Nepal.</p>
+                                </div>
+                  </div>
+ 
+
+           </div>
+      </div>
+       </section>
+
+       <!-- services section completed -->
+
+       <!-- trusted organization section starts-->
+       <section class=" p-5 my-auto mx-auto" id="client">
+         <div class="container">
+            <h3 class="h3-heading text-center">Trusted by thousand of organisation</h3>
+            <hr class="thick-border mb-5">           
+       
+         <div id="client-carousel" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                 <li data-target="#client-carousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#client-carousel" data-slide-to="1"></li>
+                 <li data-target="#client-carousel" data-slide-to="2"></li>
+            </ol>
+          
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+            
+                     <div class="row mx-auto">                  
+                        <div class="col-md-3 mb-3 text-center img-grey">          
+                          <div class="bg-white p-1 border-radius-3">                    
+                              <img class="img-fluid " style="height: 100px;" alt="bank" src="image/client/bank0.png" />                
+                          </div>     
+                        </div>
+                        <div class="col-md-3 mb-3 text-center img-grey">
+                            <div class="bg-white p-1 border-radius-3">
+                                <img class="img-fluid " style="height: 100px;" alt="worldlink" src="image/client/wordlink0.png" />
+                            </div>
+                        </div>
+                         <div class="col-md-3 mb-3 text-center img-grey">
+                            <div class="bg-white p-1 border-radius-3">
+                                 <img class="img-fluid "style="height: 100px;" alt="nepaltelicom" src="image/client/nepaltelicom0.jpg" />
+                             </div>
+                         </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                            <div class="bg-white p-1 border-radius-3">          
+                                  <img class="img-fluid "style="height: 100px; " alt="siment" src="image/client/shidharthacement0.png">
+                            </div>
+                          </div> 
+                     </div> 
+                   </div>    
+                   <div class="carousel-item">
+                     <div class="row mx-auto">
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                            <div class="bg-white p-1 border-radius-3">
+                                 <img class="img-fluid" alt="oxfam" style="height: 100px; " src="image/client/esewa1.jpg" />
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                              <div class="bg-white p-1 border-radius-3">
+                                   <img class="img-fluid" alt="shivam" style="height: 100px;" src="image/client/shivam1.jpg" />
+                               </div>
+                          </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                              <div class="bg-white p-1 border-radius-3">
+                                   <img class="img-fluid" alt="expert" style="height: 100px;" src="image/client/expert1.png" />
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                              <div class="bg-white p-1 border-radius-3">
+                                    <img class="img-fluid" alt="pepsi" style="height: 100px; " src="image/client/pepsi1.png">
+                               </div>
+                           </div>
+                     </div>
+                 </div>
+                 <div class="carousel-item">
+                    <div class="row mx-auto">
+                         <div class="col-md-3 mb-3 text-center img-grey">
+                             <div class="bg-white p-1 border-radius-3">
+                                   <img class="img-fluid" alt="oxfam" style="height: 100px; " src="image/client/oxfam2.png" />
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                              <div class="bg-white p-1 border-radius-3">
+                                    <img class="img-fluid" alt="cococola" style="height: 100px;" src="image/client/cocala.jpg" />
+                               </div>
+                           </div>
+                          <div class="col-md-3 mb-3 text-center img-grey">
+                               <div class="bg-white p-1 border-radius-3">
+                                    <img class="img-fluid" alt="jobe" style="height: 100px;" src="image/client/jobe.jpg" />
+                                </div>
+                           </div>
+                         <div class="col-md-3 mb-3 text-center img-grey">
+                              <div class="bg-white p-1 border-radius-3">
+                                    <img class="img-fluid" alt="cg" style="height: 100px; " src="image/client/cg.png">
+                              </div>
+                         </div>
+                     </div>
+                </div>
+           </div>
+        </div>
+          
+      <div class="container pt-5 mt-4">
+      <div class="text-center text-white">and many more...</div>
+      </div> 
+       </section>
+       <!-- client section end -->
+       <!-- shareholder section started -->
+<section id="shareholder" class="bg-light-white pb-2 pt-5 ">
+         <div class="container">
+          <h4 class="text-center mb-3">Get in touch</h4>
+          <hr class="thick-border">
+         </div>
+</section>
+<section id="section6" class="text-white">
+          <div class="container">
+             <div class="row">
+                <div class="col-md-4 content">
+                         <div class="row no-gutters "> 
+                           <div class="col-md-4 p-1">
+                            <div class="sholder mt-1">
+                                <img src="image/shareholder/sholder1.jpg" alt="kapilbabu">
+                            </div>
+                           </div>
+
+                            <div class="col-md-8 p-1  ">
+                                 <h5>Kapil babu</h5>
+                                 <p class="p-primary">
+                                  Executive - Client Relation<br />
+                                  M | + 977 <a href="tel:9821550276" class="text-white">9821550276</a><br />
+                                  E | <a href="#" class="text-primary font-weight-bold">kanxokapil11@gmail.com</a>
+                                  </p>
+                            </div>
+                          </div>
+                  </div>
+
+                <div class="col-md-4 content">
+                  <div class="row no-gutters "> 
+                    <div class="col-md-4 p-1">
+                     <div class="sholder mt-1">
+                         <img src="image/shareholder/sholder4.jpg" alt="Madhushudan Dhakal">
+                     </div>
+                    </div>
+
+                     <div class="col-md-8 p-1  ">
+                          <h5>Madhushudan Dhakal</h5>
+                          <p class="p-primary">
+                           Executive - Client Relation<br />
+                           M | + 977 <a href="tel:9867136146" class="text-white">9867136146</a><br />
+                           E |<a href="#" class="text-primary font-weight-bold">Madhusudandhakal49@gmail.com</a>
+                           </p>
+                     </div>
+                   </div>
+           
+         </div>
+
+         <div class="col-md-4 content">
+          <div class="row no-gutters  "> 
+            <div class="col-md-4 p-1">
+             <div class="sholder mt-1">
+                 <img src="image/shareholder/sholder3.jpg" alt="Prakash xettri">
+             </div>
+            </div>
+
+             <div class="col-md-8 p-1 ">
+                  <h5>Prakash xettri</h5>
+                  <p class="p-primary">
+                   Executive - Client Relation<br />
+                   M | + 977 <a href="tel:9821476174" class="text-white">9821476174</a><br />
+                   E | <a href="#" class="text-primary font-weight-bold">prakashphaudar54@gmail.com</a>
+                   </p>
+             </div>
+           </div>
+       </div>
+
+       <div class="col-md-4 content">
+        <div class="row no-gutters  "> 
+          <div class="col-md-4 p-1">
+           <div class="sholder mt-1">
+               <img src="image/shareholder/sholder2.jpg" alt="bishal adhikari">
+           </div>
+          </div>
+
+           <div class="col-md-8 p-1   ">
+                <h5>Bishal Adhikari</h5>
+                <p class="p-primary">
+                 Executive - Client Relation<br />
+                 M | + 977 <a href="tel:9861862797" class="text-white">9861862797</a><br />
+                 E | <a href="#" class="text-primary font-weight-bold">beeshaladhikari@gmail.com</a>
+                 </p>
+           </div>
+         </div>
+      </div>
+      <div class="col-md-4 content ">
+        <div class="row no-gutters  "> 
+          <div class="col-md-4 p-1">
+           <div class="sholder mt-1">
+               <img src="image/shareholder/sholder5.jpg "Suraj khanal">
+           </div>
+          </div>
+
+           <div class="col-md-8 p-1 ">
+                <h5>Suraj khanal</h5>
+                <p class="p-primary">
+                 Executive - Client Relation<br />
+                 M | + 977 <a href="tel:9861862797" class="text-white">9847213559</a><br />
+                 E | <a href="#" class="text-primary font-weight-bold">codersuraz@gmail.com</a>
+                 </p>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>         
+</section>
+<!-- shareholder section end -->
+
+<!-- map section started -->
+  <section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113060.34562180079!2d83.36249436558337!3d27.68219735876043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996864275d9755f%3A0x2b1e92d89d4bb3ae!2sButwal!5e0!3m2!1sen!2snp!4v1589017625296!5m2!1sen!2snp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>  
+<!-- map section end -->
+
+<!-- register and login section start -->
+<section class="bg-light shadow d-md-block d-none" id="buttomSlider" data-toggle="stickybottom-onscroll">
+  <div class="container py-3">
+  <div class="row align-items-center">
+  <div class="h5 col-md-4 offset-md-1 text-center text-md-right  mb-3 mb-md-0">
+  <span>Search, Apply & Get Job: <span class="font-weight-bold">FREE</span></span>
+  </div>
+  <div class="col-6 col-md-2 btna">
+  <a href="post.html" class="btn   animate-push 
+   border-radius-3 w-100 ">
+  <i class="fa fa-hourglass-start" aria-hidden="true"></i> REGISTER
+  </a>
+  </div>
+  <div class="col-6 col-md-2 btnb">
+  <a href="login.html " class="btn animate-push border-radius-3 w-100">
+    <i class="fa  fa-lock" aria-hidden="true"></i> LOGIN
+  </a>
+  </div>
+  <div class="col-md-3 text-left text-md-center pt-3 pt-md-0">
+  <a href="#exampleInputEmail1" class="w-100">
+    <i class="fa fa-venus-double" aria-hidden="true"></i> <span>Are You an Employer?</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- login and register section end -->
+
+  <!-- section footer start -->
+  <!-- section footer end -->
+
+  <section id="footerId" class="footer bg-secondary" >
+    <div class="container py-4 text-white-50 ">
+       <div class="row">
+         <div class="col-md-4">
+           <p class="small text-justify p-secondary">
+                 Since inception in 2009, we have turned out to be number one jobs provider in Nepal with 300
+                million+ page views with 2.5 million+ progressive visits every month, created 180,000+ success stories
+                and registered 600,000+ job seekers in our database. We have been offering 32,000+ employers
+                promote their employer brands to jobseekers and advertise diverse opportunities to over a million
+                candidates inside Nepal and abroad. Established as an inevitable bridge between the hiring employers
+                and the job seekers, we are well-known as a national leader in recruitment solutions &amp; career
+                management in Nepal. <a href="readmore.html" target="_blank" class="text-primary">Read more...</a>
+            </p>
+          </div>
+
+
+
+          <div class="col-md-2">
+            <h6 class="text-uppercase text-white">about us</h6>
+            <ul class="list-unstyled">
+                <li><a class="text-white-50" href="aboutus.html"  target="_blank">About job recurement</a></li>
+              <li><a class="text-white-50" href="/career-in-merojob/" target="_blank">Life
+              at job recurement</a></li>
+              <li><a class="text-white-50" href="https://www.facebook.com" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+              <li><a class="text-white-50" href="https://twitter.com/explore" rel="noopener noreferrer" target="_blank">Twitter</a></li>
+              <li><a class="text-white-50" href="https://www.youtube.com/watch?v=VuTjWcrFJTg&t=3587s" rel="noopener noreferrer" target="_blank">youtube</a></li>
+              <li><a class="text-white-50" href="/contact/" target="_blank">Feedback</a>
+              </li>
+              </ul>
+          </div>   
+
+          
+          <div class="col-md-2">
+            <h6 class="text-uppercase text-white">for employer</h6>
+            <ul class="list-unstyled">
+              <li><a class="text-white-50" href="#exampleInputEmail1">Post a
+              Job</a></li>
+              <li><a class="text-white-50" href="post.html">Register</a>
+              </li>
+              <li><a class="text-white-50" href="login.html">Login</a>
+              </li>
+              <li><a class="text-white-50" href="#services">Recruitment
+              Services</a></li>
+              <li><a class="text-white-50" href="/jobkurakani/category/hr-insider/">HR Insider</a></li>
+              <li><a class="text-white-50" href="/faq/">FAQ</a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-2">
+              <h6 class="text-uppercase text-white">for jobseeker</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-white-50" href="post.html"> Register</a></li>
+                <li><a class="text-white-50" href="/search/"> Search Jobs</a>
+                </li>
+                <li><a class="text-white-50" href="login.html">
+                Login</a></li>
+               
+                <li><a class="text-white-50" href="/jobkurakani/"> Job
+                Kurakani</a></li>
+                <li><a class="text-white-50" href="/service/resume-re-write/"> Career
+                Services</a></li>
+                <li><a class="text-white-50" href="/faq/"> FAQ</a></li>
+                </ul>
+          </div>
+
+           
+         
+
+        
+          
+          <div class="col-md-2">
+            <h6 class="text-white">CONTACT US</h6>
+            <div class="media">
+            <div class="media-left">
+            <span class="icon-pin mr-2"></span>
+            </div>
+            <div class="media-body">
+            <p class="text-white-50 mb-1">
+            Ganapati Bhawan<br>clasitech meain road<br>Butwal
+            Golpark<br>Butwal, Nepal
+            </p>
+            </div>
+            </div>
+            <div class="media px-1">
+            <div class="media-left ">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="media-body">
+            <a href="tel:+977-01-4106700" class="text-white-50 mb-1 mt-1">+977 1 4106700</a>
+            </div>
+            </div>
+            <div class="media px-1">
+            <div class="media-left">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="media-body">
+            <a class="text-white-50" href="/cdn-cgi/l/email-protection#71181f171e311c14031e1b1e135f121e1c"><span class="__cf_email__" data-cfemail="9df4f3fbf2ddf0f8eff2f7f2ffb3fef2f0">[email&#160;protected]</span></a>
+            </div>
+            </div>
+            </div>
+            
+       </div>
+    </div>
+  </section>
+  <!-- footer section end -->
+  <section class="bg-dark">
+  <div class="container text-white-50 pt-2 pb-3">
+    <div class="row">
+       <div class="col-md-5 ">
+          <ul class="list-unstyled d-flex  margin">
+            <li class="margin"><a class="text-white-50" href="term.html">Terms</a></li>/
+             <li class="margin"><a class="text-white-50" href="privacy.html">Privacy</a></li>/
+              <li class="margin p-secondary mt-1 mx-2 ">  <i class="fa fa-smile-o " aria-hidden="true"></i> Be happy with<a class="text-primary " href="index.html">online duel recurement systems</a></li>
+            
+          </ul>
+       </div>
+       <div class="col-md-2">
+
+       </div>
+       <div class="col-md-5 col-sm-12 col-12 footericon">
+        <a href="https://www.facebook.com" class="text-white-50 mx-1 no-uline facebook-ico" rel="nofollow noopener noreferrer" target="_blank" aria-label="Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://www.youtube.com" class="text-white-50 mx-1 no-uline youtube-ico" rel="nofollow noopener noreferrer" target="_blank" aria-label="YouTube">
+          <i class="fa   fa-youtube-play" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://twitter.com" class="text-white-50 mx-1 no-uline twitter-ico" rel="nofollow noopener noreferrer" target="_blank" aria-label="Twitter">
+        <i class="fa   fa-twitter" aria-hidden="true"></i>
+        </a>
+       
+        <a href="https://www.linkedin.com/company/merojob" class="text-white-50 mx-1 no-uline linkedin-ico" rel="nofollow noopener noreferrer" target="_blank" aria-label="LinkedIn">
+        <span class="icon-linkedin icon-one-half-x"></span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.merojob.merojobapp" class="text-white-50 mx-1 no-uline" rel="nofollow noopener noreferrer" target="_blank" aria-label="Android Play Store">
+          <i class="fa   fa-android" aria-hidden="true"></i>
+        </a>
+        <a href="https://apps.apple.com/us/app/merojob-com/id1301256298" class="text-white-50 mx-1 no-uline" rel="nofollow noopener noreferrer" target="_blank" aria-label="Apple App Store">
+          <i class="fa   fa-apple" aria-hidden="true"></i>
+        </a>
+        </div>
+    </div>
+  </div>
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
